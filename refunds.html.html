@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refund Policy — MissedCall</title>
+  <meta name="description" content="Refund Policy for MissedCall subscriptions." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">MC</div>
+        <div>
+          <div class="title">MissedCall</div>
+          <div class="subtitle">Refund Policy</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <a class="btn secondary small" href="index.html">Home</a>
+        <a class="btn secondary small" href="pricing.html">Pricing</a>
+        <a class="btn secondary small" href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main class="grid" style="grid-template-columns:1fr;">
+      <section class="card">
+        <h1>Refund Policy</h1>
+        <p class="tiny muted">Last updated: <span id="updated"></span></p>
+
+        <h2>Pilot</h2>
+        <p class="muted">
+          The pilot is free during the pilot period (if offered). If your pilot is not free, the terms will be shown
+          clearly at checkout.
+        </p>
+
+        <h2>Monthly subscription</h2>
+        <p class="muted">
+          You may cancel anytime to stop future renewals. If you cancel, you will keep access until the end of
+          the current billing period unless otherwise stated at checkout.
+        </p>
+
+        <h2>Refund requests</h2>
+        <p class="muted">
+          If you believe you were charged in error or experienced a major service failure, contact us and we’ll review it.
+          Approved refunds are issued back to the original payment method via Stripe.
+        </p>
+
+        <div class="callout">
+          <strong>How to request a refund</strong>
+          <ul>
+            <li>Go to <a href="contact.html">Contact</a></li>
+            <li>Include: business name, charge date, and what happened</li>
+          </ul>
+        </div>
+
+        <h2>Contact</h2>
+        <p class="muted">
+          Questions or requests: <a href="contact.html">Contact us</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="tiny muted">© <span id="year"></span> MissedCall</div>
+        <div class="tiny muted">
+          <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("updated").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>

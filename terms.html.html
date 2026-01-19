@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — MissedCall</title>
+  <meta name="description" content="Terms of Service for MissedCall." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">MC</div>
+        <div>
+          <div class="title">MissedCall</div>
+          <div class="subtitle">Terms of Service</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <a class="btn secondary small" href="index.html">Home</a>
+        <a class="btn secondary small" href="pricing.html">Pricing</a>
+        <a class="btn secondary small" href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main class="grid" style="grid-template-columns:1fr;">
+      <section class="card">
+        <h1>Terms of Service</h1>
+        <p class="tiny muted">Last updated: <span id="updated"></span></p>
+
+        <p class="muted">
+          By using MissedCall (the “Service”), you agree to these Terms.
+          If you do not agree, do not use the Service.
+        </p>
+
+        <h2>Service description</h2>
+        <p class="muted">
+          MissedCall helps businesses respond to missed calls via automated messages and basic tracking.
+          Results may vary depending on call volume, customer behavior, and your booking process.
+        </p>
+
+        <h2>Customer responsibilities</h2>
+        <ul>
+          <li>You are responsible for the accuracy of your booking link and business information.</li>
+          <li>You agree to use the Service legally and not for spam, harassment, or prohibited content.</li>
+          <li>You are responsible for complying with applicable texting/telecom laws and regulations.</li>
+        </ul>
+
+        <h2>Payments & billing</h2>
+        <p class="muted">
+          If you purchase a subscription, billing is handled through Stripe. Subscription renews automatically
+          unless canceled. You can cancel anytime.
+        </p>
+
+        <h2>Availability</h2>
+        <p class="muted">
+          We aim for reliable uptime, but the Service may be unavailable at times due to maintenance, outages,
+          or third-party provider issues.
+        </p>
+
+        <h2>Limitation of liability</h2>
+        <p class="muted">
+          To the fullest extent permitted by law, MissedCall is not liable for lost profits, lost jobs, missed revenue,
+          or indirect damages. Our total liability will not exceed the amount you paid in the prior 30 days.
+        </p>
+
+        <h2>Termination</h2>
+        <p class="muted">
+          We may suspend or terminate accounts that violate these Terms or create risk for the Service.
+        </p>
+
+        <h2>Refunds</h2>
+        <p class="muted">
+          Refund terms are described here: <a href="refunds.html">Refund Policy</a>.
+        </p>
+
+        <h2>Contact</h2>
+        <p class="muted">
+          Questions? <a href="contact.html">Contact us</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="tiny muted">© <span id="year"></span> MissedCall</div>
+        <div class="tiny muted">
+          <a href="privacy.html">Privacy</a> · <a href="refunds.html">Refunds</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("updated").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
