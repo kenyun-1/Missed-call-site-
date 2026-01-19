@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Success — MissedCall</title>
+  <meta name="description" content="Thanks for subscribing to MissedCall." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">MC</div>
+        <div>
+          <div class="title">MissedCall</div>
+          <div class="subtitle">Missed call → booked job</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <a class="btn secondary small" href="index.html">Home</a>
+        <a class="btn secondary small" href="pricing.html">Pricing</a>
+        <a class="btn secondary small" href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main class="grid" style="grid-template-columns:1fr;">
+      <section class="card">
+        <span class="badge">Payment received</span>
+        <h1>You’re all set 🎉</h1>
+        <p class="muted">
+          Thanks for subscribing to <strong>MissedCall</strong>. Next step is setup so we can start
+          texting missed callers back with your booking link.
+        </p>
+
+        <div class="callout">
+          <strong>What happens next:</strong>
+          <ul>
+            <li>We’ll contact you within 24 hours to confirm your booking link and message</li>
+            <li>We’ll run a quick test to make sure it works</li>
+            <li>You’ll start seeing basic tracking</li>
+          </ul>
+        </div>
+
+        <div class="row" style="margin-top:14px;">
+          <a class="btn" href="contact.html">Finish setup (contact)</a>
+          <a class="btn secondary" href="index.html">Back to home</a>
+        </div>
+
+        <p class="tiny muted" style="margin-top:12px;">
+          If you don’t hear from us, text “SETUP” from the number you used at checkout and we’ll jump on it.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="tiny muted">© <span id="year"></span> MissedCall</div>
+        <div class="tiny muted">
+          <a href="privacy.html">Privacy</a> ·
+          <a href="terms.html">Terms</a> ·
+          <a href="refunds.html">Refunds</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
