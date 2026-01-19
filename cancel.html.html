@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Canceled — MissedCall</title>
+  <meta name="description" content="Checkout canceled. You can try again or contact us for help." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">MC</div>
+        <div>
+          <div class="title">MissedCall</div>
+          <div class="subtitle">Missed call → booked job</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <a class="btn secondary small" href="index.html">Home</a>
+        <a class="btn secondary small" href="pricing.html">Pricing</a>
+        <a class="btn secondary small" href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main class="grid" style="grid-template-columns:1fr;">
+      <section class="card">
+        <span class="badge">No charge</span>
+        <h1>Checkout canceled</h1>
+        <p class="muted">
+          No worries — your card wasn’t charged. If something went wrong, you can try again or message us and we’ll help.
+        </p>
+
+        <div class="callout">
+          <strong>Common reasons:</strong>
+          <ul>
+            <li>You weren’t ready to enter payment details</li>
+            <li>Stripe timed out or the page was closed</li>
+            <li>You had a question before subscribing</li>
+          </ul>
+        </div>
+
+        <div class="row" style="margin-top:14px;">
+          <a class="btn" href="pricing.html">Try again</a>
+          <a class="btn secondary" href="contact.html">Ask a question</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="tiny muted">© <span id="year"></span> MissedCall</div>
+        <div class="tiny muted">
+          <a href="privacy.html">Privacy</a> ·
+          <a href="terms.html">Terms</a> ·
+          <a href="refunds.html">Refunds</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
