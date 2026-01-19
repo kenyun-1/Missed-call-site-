@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — MissedCall</title>
+  <meta name="description" content="Simple, risk-free pricing for MissedCall." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">MC</div>
+        <div>
+          <div class="title">MissedCall</div>
+          <div class="subtitle">Missed call → booked job</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <a class="btn secondary small" href="index.html">Home</a>
+        <a class="btn secondary small" href="contact.html">Contact</a>
+        <a class="btn small" href="dashboard.html">Dashboard</a>
+      </div>
+    </header>
+
+    <main class="grid" style="grid-template-columns:1fr;">
+      <section class="card">
+        <h1>Pricing</h1>
+        <p class="muted">Simple and risk-free. If it doesn’t pay for itself, cancel anytime.</p>
+
+        <div class="grid" style="grid-template-columns:1fr 1fr; margin-top:14px;">
+          <!-- PILOT -->
+          <div class="card">
+            <span class="badge">Best for: Pilot</span>
+            <h2>7-Day Pilot</h2>
+            <p class="muted tiny">Try it in your real business. We’ll help you set it up.</p>
+
+            <div class="callout">
+              <strong>Included:</strong>
+              <ul>
+                <li>Instant missed-call text-back + your booking link</li>
+                <li>Optional follow-up text</li>
+                <li>Basic tracking</li>
+                <li>Setup help</li>
+              </ul>
+            </div>
+
+            <p style="font-size:32px; margin:14px 0 0; font-weight:800;">Free</p>
+            <p class="tiny muted" style="margin-top:4px;">Pilot spots limited (Fort Worth only).</p>
+
+            <div class="row" style="margin-top:14px;">
+              <a class="btn" href="index.html#leadForm">Request pilot</a>
+              <a class="btn secondary" href="contact.html">Questions</a>
+            </div>
+          </div>
+
+          <!-- MONTHLY -->
+          <div class="card">
+            <span class="badge">After pilot</span>
+            <h2>Monthly</h2>
+            <p class="muted tiny">Ongoing service. Cancel anytime.</p>
+
+            <div class="callout">
+              <strong>Included:</strong>
+              <ul>
+                <li>Instant text-back on missed calls</li>
+                <li>Optional follow-up text</li>
+                <li>Basic tracking</li>
+                <li>Support</li>
+              </ul>
+            </div>
+
+            <p style="font-size:32px; margin:14px 0 0; font-weight:800;">
+              $79<span class="muted" style="font-size:16px; font-weight:600;">/month</span>
+            </p>
+            <p class="tiny muted" style="margin-top:4px;">Most plumbers recover the cost with 1 booked job.</p>
+
+            <div class="row" style="margin-top:14px;">
+              <a class="btn"
+                 href="https://buy.stripe.com/dRm5kE6VXfr19Vj49j7Vm00"
+                 target="_blank"
+                 rel="noopener">
+                Start subscription
+              </a>
+              <a class="btn secondary" href="refunds.html">Refund policy</a>
+            </div>
+
+            <p class="tiny muted" style="margin-top:10px;">
+              Not ready yet? <a href="contact.html">Ask a question</a>.
+            </p>
+
+            <p class="tiny muted" style="margin-top:10px;">
+              By subscribing you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:14px;">
+          <strong>Need a different setup?</strong>
+          <div class="tiny muted" style="margin-top:6px;">Call or text and we’ll walk through options.</div>
+          <div style="margin-top:10px;">
+            <a class="btn secondary small" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="tiny muted">© <span id="year"></span> MissedCall</div>
+        <div class="tiny muted">
+          <a href="index.html">Home</a> ·
+          <a href="contact.html">Contact</a> ·
+          <a href="privacy.html">Privacy</a> ·
+          <a href="terms.html">Terms</a> ·
+          <a href="refunds.html">Refunds</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
